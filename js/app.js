@@ -14,8 +14,9 @@ var app = {
     start: () => {
         console.log("App started...");
 
-        reinit.owl($('.home_slider .slider'), {
-            items: 1
+        reinit.owl($('.home_slider .sld_holder'), {
+            items: 1,
+            autoHeight: true
         });
         
     },
