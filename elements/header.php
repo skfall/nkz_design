@@ -1,12 +1,12 @@
 <header id="header" class="header">
     <div class="row">
         <div class="container">
-            <div class="col xl2 l2 m2 s12">
+            <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-12">
                 <a href="<?= RS; ?>" class="logo">
                     <img src="<?= RS.'img/logo.png'; ?>" alt="Logo" />
                 </a>
             </div>
-            <div class="col xl5 l5 m5 s12">
+            <div class="col col-lg-5 col-md-5 col-sm-5 col-xs-12">
                 <div class="top_nav">
                     <ul>
                         <li><a href="<?= RS; ?>">О застройщике</a></li>
@@ -23,7 +23,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col xl3 l3 m3 s12 header_right_side">
+            <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-12 header_right_side">
                 <div class="phones">
                     <ul>
                         <li><a href="tel:123123123">044 97-31-23</a></li>

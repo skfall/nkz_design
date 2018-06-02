@@ -15,6 +15,7 @@
 .content_target img {width: auto; height: auto; max-width: 100%;}
 
 header {background: #444444; padding: 20px 15px;}
+header ul {margin-bottom: 0;}
 header .row {margin-bottom: 0;}
 header .top_nav li {display: inline-block; margin: 0 10px;}
 header .top_nav a {color: #c5c5c5; font: 14px "RobotoL", Tahoma;}
@@ -44,10 +45,10 @@ header .header_right_side {padding-top: 13px !important; position: relative;}
 .logo img:hover {-webkit-mask-image: linear-gradient(-75deg, rgba(255,255,255,.8) 30%, #000 50%, rgba(255,255,255,.8) 70%); -webkit-mask-size: 200%; animation: shine 3s infinite;}
 header .address a:hover {text-decoration: underline;}
 
-.home_slider .sld_holder {display: block;}
-.home_slider .item {position: relative;}
-.home_slider .item img {width: 100%; height: auto;}
-.home_slider .slide_caption {position: absolute; bottom: 150px; font: 36px 'RobotoB', Tahoma; color: #fff; letter-spacing: 2px; left: 15%;}
+.th_slider .sld_holder {display: block;}
+.th_slider .item {position: relative;}
+.th_slider .item img {width: 100%; height: auto;}
+.th_slider .slide_caption {position: absolute; bottom: 150px; font: 36px 'RobotoB', Tahoma; color: #fff; letter-spacing: 2px; left: 15%;}
 
 
 .intro {background: url('../img/section_bg.png') left bottom no-repeat; background-size: contain; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; -ms-background-size: contain; padding: 90px;}
@@ -59,18 +60,60 @@ header .address a:hover {text-decoration: underline;}
 .intro .left_side::after {content: ""; position: absolute; right: 0; bottom: 0px; width: 15px; background: #e3cdb2; height: 25%;}
 .intro .content_target div, .intro .content_target p, .intro .content_target li, .intro .content_target span {letter-spacing: 1px; line-height: 24px; font-size: 16px; color: #504f4b;}
 
-.homepage_video {position: relative; width: 100%; height: auto; z-index: 10;;}
+.th_video {position: relative; width: 100%; height: auto; z-index: 10;;}
 .video .container {position: relative;}
 .video .caption  {position: absolute; font: 60px 'BodoniB', Tahoma; color: #fff; top: 270px; left: 0%; z-index: 20; text-transform: uppercase; line-height: 50px; max-width: 90%;}
 .video .caption::after {content: ""; height: 5px; width: 100px; background: #ab0200; display: block; margin-left: -20px; margin-top: 15px;}
 
 .video .video_holder {position: relative;}
 .video .controls {position: absolute; right: 0; height: 490px; width: 600px; top: 50%; margin-top: -245px; z-index: 30;}
-.video .sound_switcher {width: 27px; height: 32px; background: url('../img/ico_mic.svg') left center no-repeat;} 
+
+.video .sound_switcher {width: 27px; height: 32px; background: url('../img/ico_mic.svg') left center no-repeat; cursor: pointer; float: right; margin-bottom: 40px; margin-right: 358px; transition-duration: 0.5s; position: relative;} 
+
+.video .sound_switcher::after {content: ""; display: none; position: absolute; width: 2px; height: 40px; background: #e3cdb2; left: 0; top: 0; transform: rotate(138deg); -moz-transform: rotate(138deg); transform: -webkit-rotate(138deg); -o-transform: rotate(138deg); transform: -ms-rotate(138deg); left: 12px; top: -5px;} 
+
+.video .sound_switcher.muted::after {display: block;}
+
+
+
 .video .tracker {height: 418px; width: 292px; float: right; margin-right: 132px;}
 
-#video_tracker circle {cursor: pointer; transition-duration: 0.5s;}
-#video_tracker circle:hover {fill: #fff;}
+#video_tracker circle {transition-duration: 0.5s;}
+#video_tracker circle.hovered {fill: #fff; r: 10px;}
+#video_tracker .circle_text.hovered {fill: #fff;}
+#video_tracker .circle_text.active {fill: #fff;}
+#video_tracker circle.active {fill: #fff; r: 12px;}
 
 #c_part1, #c_part2, #c_part3, #c_part4, #c_part5 {position: relative;}
 
+.video .tracker svg {height: 100%; overflow: visible;}
+
+.circle_text {fill: #e3cdb2; text-transform: uppercase; font: 16px 'RobotoR', Tahoma; letter-spacing: 0px; cursor: pointer;}
+#c_part1_t {transform: translate(-180px, 14px); transform: -webkit-translate(-180px, 14px); transform: -moz-translate(-180px, 14px); transform: -o-translate(-180px, 14px); -ms-transform: translate(-180px, 14px);}
+#c_part2_t {transform: translate(-236px, 114px); transform: -webkit-translate(-236px, 114px); transform: -moz-translate(-236px, 114px); transform: -o-translate(-236px, 114px); transform: -ms-translate(-236px, 114px);}
+#c_part3_t {transform: translate(-160px, 213px); transform: -webkit-translate(-160px, 213px); transform: -moz-translate(-160px, 213px); transform: -o-translate(-160px, 213px); transform: -ms-translate(-160px, 213px);}
+#c_part4_t {transform: translate(-116px, 313px); transform: -webkit-translate(-116px, 313px); transform: -moz-translate(-116px, 313px); transform: -o-translate(-116px, 313px); transform: -ms-translate(-116px, 313px);}
+#c_part5_t {transform: translate(-58px, 411px); transform: -webkit-translate(-58px, 411px); transform: -moz-translate(-58px, 411px); transform: -o-translate(-58px, 411px); transform: -ms-translate(-58px, 411px);}
+
+.th_gal .preview {position: relative;}
+.th_gal .preview .title {padding: 20px; text-align: center; color: #fff; font: 26px 'RobotoB', Tahoma; background: #d51820;}
+.th_gal .preview img {width: 100%; height: auto;}
+.th_gal .preview .controls {position: absolute; left: 0; right: 0; bottom: 0;}
+.th_gal .preview .controls .control_item {padding: 20px 10px; background: rgba(0, 0, 0, 0.4); float: left; min-height: 74px;}
+.th_gal .preview .controls .control_item.active {background: rgba(0, 0, 0, 0.5);}
+.th_gal .preview .controls .prev {position: relative; border-right: 1px solid rgba(255, 255, 255, 0.7); transition-duration: 0.4s;}
+.th_gal .preview .controls .prev::after {content: ""; position: absolute; width: 30%; height: 2px; left: 10%; top: 50%; margin-top: -1px; background: #fff; transition-duration: 0.4s;}
+
+.th_gal .preview .controls .next {position: relative; border-left: 1px solid rgba(255, 255, 255, 0.7); transition-duration: 0.4s;}
+.th_gal .preview .controls .next::after {content: ""; position: absolute; width: 30%; height: 2px; right: 10%; top: 50%; margin-top: -1px; background: #fff; transition-duration: 0.4s;}
+
+.th_gal .preview .controls .prev:hover {background: rgba(0, 0, 0, 0.5);}
+.th_gal .preview .controls .prev:hover::after {width: 80%;}
+
+.th_gal .preview .controls .next:hover {background: rgba(0, 0, 0, 0.5);}
+.th_gal .preview .controls .next:hover::after {width: 80%;}
+
+.th_gal .preview .controls .prev {width: 42%;}
+.th_gal .preview .controls .next {width: 42%;}
+.th_gal .preview .controls .curr {width: 16%; text-align: center; color: #fff; font: 18px 'RobotoR', Tahoma;}
+.th_gal .preview .controls .curr span {display: block; padding-top: 6px;}

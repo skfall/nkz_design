@@ -119,13 +119,17 @@
       <line id="_3_line" data-name="№3 line" class="cls-9" x1="32.25" y1="305.25" x2="12.25" y2="207.24"/>
       <line id="_2_line" data-name="№2 line" class="cls-10" x1="12.25" y1="205.69" x2="32.25" y2="107.68"/>
       <line id="_1_line" data-name="№1 line" class="cls-11" x1="32.25" y1="106.69" x2="52.25" y2="8.68"/>
-      <circle id="c_part1" data-name="№5 Ellipse" class="cls-12" cx="52.25" cy="405.37" r="8.13"/>
-      <text>Престижный пригород</text>
-      <circle id="c_part2" data-name="№4 Ellipse" class="cls-12" cx="32.25" cy="306.25" r="8.13"/>
-      <circle id="c_part3" data-name="№3 Ellipse" class="cls-13" cx="12.25" cy="206.69" r="12.25"/>
-      <circle id="_3_Ellipse-2" data-name="№3 Ellipse" class="cls-14" cx="12.25" cy="206.69" r="5.44"/>
-      <circle id="c_part4" data-name="№2 Ellipse" class="cls-12" cx="32.25" cy="107.69" r="8.13"/>
-      <circle id="c_part5" data-name="№1 Ellipse" class="cls-12" cx="52.25" cy="8.13" r="8.13"/>
+      <circle id="c_part5" data-name="№5 Ellipse" class="cls-12 time_point" cx="52.25" cy="405.37" r="8.13"/>
+      <text id="c_part1_t" class="circle_text" onclick="app.video_jump(this);" data-time="0" >Престижный пригород</text>
+      <circle id="c_part4" data-name="№4 Ellipse" class="cls-12 time_point" cx="32.25" cy="306.25" r="8.13"/>
+      <text id="c_part2_t" class="circle_text" onclick="app.video_jump(this);" data-time="10" >Транспортная доступность</text>      
+      <circle id="c_part3" data-name="№3 Ellipse" class="cls-13 time_point" cx="12.25" cy="206.69" r="8.13"/>
+      <text id="c_part3_t" class="circle_text" onclick="app.video_jump(this);" data-time="15" >Камины в домах</text>            
+      <!-- <circle id="_3_Ellipse-2" data-name="№3 Ellipse" class="cls-14" cx="12.25" cy="206.69" r="5.44"/> -->
+      <circle id="c_part2" data-name="№2 Ellipse" class="cls-12 time_point" cx="32.25" cy="107.69" r="8.13"/>
+      <text id="c_part4_t" class="circle_text" onclick="app.video_jump(this);" data-time="20" >Безопасность</text>                  
+      <circle id="c_part1" data-name="№1 Ellipse" class="cls-12 time_point" cx="52.25" cy="8.13" r="8.13"/>
+      <text id="c_part5_t" class="circle_text" onclick="app.video_jump(this);" data-time="40" >Свой парк</text>
     </g>
   </g>
 </svg>
