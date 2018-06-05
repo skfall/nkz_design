@@ -22,11 +22,18 @@ var app = {
         console.log("App started...");
 
         $("#th_video").bind("timeupdate", app.video_update);
+        $('.th_gal .preview .curr span').text("1 / " + $('.th_gal .queue .item').length);
 
         reinit.owl($('.th_slider .sld_holder'), {
             items: 1,
             autoHeight: true
         });
+
+        reinit.owl($('.th_gal .circus'), {
+            items: 4,
+            loop: true
+        });
+
 
         reinit.fancy($('.fancybox'));
 
@@ -101,8 +108,40 @@ var app = {
             video.muted = true;
             $(self).addClass("muted");
         }
-        console.log(video);
     },
+    set_gal_image: (self) => {
+        var self = self || {};
+        var curr_src = $(self).find('img')[0].src;
+        var curr_index = $(self).data("index");
+        $('.th_gal .circus .item').removeClass("active");
+        $(self).addClass("active");
+
+
+        var target_image = $('.th_gal .preview img')[0];
+        var target_fancy = $('.th_gal .preview .fancybox')[0];
+
+        target_fancy.href = curr_src;
+        target_image.src = curr_src;
+
+        $('.th_gal .preview').attr("data-current-index", curr_index);
+
+    }, 
+    th_gal_handle: (self, action) => {
+        var action = action || "next";
+        var target = $('.th_gal .preview img');
+        var current_index = $('.th_gal .preview').data("current-index");
+        //$('.th_gal .circus .item').removeClass("active");
+        var new_index = 0;
+        if(action == "next"){
+            new_index = parseInt(current_index) + 1;
+        }else if(action == "prev"){
+            new_index = parseInt(current_index) - 1;            
+        }
+        var new_src = $('.th_gal .item[data-index="'+ new_index+'"] img')[0].src;
+        $('.th_gal .preview').attr("data-current-index", new_index);
+        target[0].src = new_src;        
+        
+    }
 };
 
 (function($){
