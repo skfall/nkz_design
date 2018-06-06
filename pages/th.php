@@ -57,12 +57,16 @@
         <div class="th_gal_top owl-carousel">
             <div class="item">
                 <div class="title">Воплощаем европейские ценности</div>
-                <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Image" />
+                <a href="<?= RS.'img/gallery_item.jpg'; ?>" class="fancybox">
+                    <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Image" />
+                </a>
                 <div class="curr_image"><span>1 / 4</span></div>
             </div>
             <div class="item">
                 <div class="title">Воплощаем европейские ценности 2</div>
-                <img src="<?= RS.'img/home-slide.jpg'; ?>" alt="Image" />
+                <a href="<?= RS.'img/home-slide.jpg'; ?>" class="fancybox">
+                    <img src="<?= RS.'img/home-slide.jpg'; ?>" alt="Image" />
+                </a>
                 <div class="curr_image"><span>2 / 4</span></div>
             </div>
         </div>
@@ -307,10 +311,14 @@
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 rd_th_layouts_holder">
             <div class="top_owl owl-carousel">
                 <div class="item">
-                    <img src="<?= RS.'img/layout.jpg'; ?>" alt="Layout">
+                    <a href="<?= RS.'img/layout.jpg'; ?>" class="fancybox">
+                        <img src="<?= RS.'img/layout.jpg'; ?>" alt="Layout">
+                    </a>
                 </div>
                 <div class="item">
-                    <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Layout">
+                    <a href="<?= RS.'img/gallery_item.jpg'; ?>" class="fancybox">
+                        <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Layout">
+                    </a>
                 </div>
             </div>
             <div class="bot_owl owl-carousel">

@@ -222,7 +222,7 @@ a.fancybox:hover img {opacity: 0.9;}
 .th_gal_owl .th_gal_top .item {text-align: center; position: relative; padding-top: 0px;}
 .th_gal_owl .th_gal_top .item img {max-width: 100%; max-height: 630px; width: auto; height: auto;}
 
-.th_gal_owl .th_gal_top .item .title {position: absolute; left: 0; top: 0; width: 100%; background: #d51820; text-align: center; font: 26px 'RobotoB', Tahoma; color: #fff; padding: 20px;}
+.th_gal_owl .th_gal_top .item .title {position: absolute; left: 0; top: 0; width: 100%; background: #d51820; text-align: center; font: 26px 'RobotoB', Tahoma; color: #fff; padding: 20px; z-index: 50;}
 
 .th_gal_owl .th_gal_bot .item {padding: 10px;}
 
