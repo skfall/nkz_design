@@ -52,7 +52,33 @@
 </section>
 
 
+<section class="th_gal_owl parallax-window" data-parallax="scroll" data-image-src="<?= RS.'img/section_bg2.jpg'; ?>">
+    <div class="container">
+        <div class="th_gal_top owl-carousel">
+            <div class="item">
+                <div class="title">Воплощаем европейские ценности</div>
+                <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Image" />
+                <div class="curr_image"><span>1 / 4</span></div>
+            </div>
+            <div class="item">
+                <div class="title">Воплощаем европейские ценности 2</div>
+                <img src="<?= RS.'img/home-slide.jpg'; ?>" alt="Image" />
+                <div class="curr_image"><span>2 / 4</span></div>
+            </div>
+        </div>
+        <div class="th_gal_bot owl-carousel">
+            <div class="item">
+                <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Image" />
+            </div>
+            <div class="item">
+                <img src="<?= RS.'img/home-slide.jpg'; ?>" alt="Image" />
+            </div>
+        </div>
+    </div>
+</section>
 
+<?php 
+/* 
 <section class="th_gal parallax-window" data-parallax="scroll" data-image-src="<?= RS.'img/section_bg2.jpg'; ?>">
 
     <!-- SLIDER IS NOT FINISHED -->
@@ -87,6 +113,8 @@
         </div>
     </div>
 </section>
+*/
+?>
 
 <section class="th_genplan">
     <img src="<?= RS.'img/genplan_bg.jpg'; ?>" id="genplan_image" alt="Genplan" />
@@ -277,8 +305,22 @@
 <section class="rd_th_layouts parallax-window" data-parallax="scroll" data-image-src="<?= RS.'img/th_section_bg.jpg'; ?>">
     <div class="container">
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 rd_th_layouts_holder">
-            <div class="top_owl"></div>
-            <div class="bot_owl"></div>
+            <div class="top_owl owl-carousel">
+                <div class="item">
+                    <img src="<?= RS.'img/layout.jpg'; ?>" alt="Layout">
+                </div>
+                <div class="item">
+                    <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Layout">
+                </div>
+            </div>
+            <div class="bot_owl owl-carousel">
+                <div class="item">
+                    <img src="<?= RS.'img/layout.jpg'; ?>" alt="Layout">
+                </div>
+                <div class="item">
+                    <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Layout">
+                </div>               
+            </div>
         </div>
 
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 left_side">

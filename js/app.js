@@ -14,6 +14,136 @@ var reinit = {
         if(!selector) return false;
         selector.fancybox(params);
     },
+    th_layout_gal: (selector1, selector2, params) => {
+        var block_id = block_id || 0;
+		var sync1 = $('.top_owl');
+		var sync2 = $('.bot_owl');
+		var slidesPerPage = 4;
+		var syncedSecondary = true;
+
+		sync1.owlCarousel({
+			items : 1,
+			slideSpeed : 2000,
+			nav: false,
+			autoplay: false,
+			dots: false,
+			loop: false,
+			responsiveRefreshRate : 200,
+			autoHeight: true
+		}).on('changed.owl.carousel', syncPosition);
+		sync2
+			.on('initialized.owl.carousel', function () {
+			sync2.find(".owl-item").eq(0).addClass("current");
+		}).owlCarousel({
+			items : slidesPerPage,
+			dots: false,
+			nav: false,
+			smartSpeed: 200,
+			slideSpeed : 500,
+			
+			responsiveRefreshRate : 100
+		}).on('changed.owl.carousel', syncPosition2);
+
+		function syncPosition(el) {
+			var count = el.item.count-1;
+			var current = Math.round(el.item.index - (el.item.count/2) - .5);
+			if(current < 0) {
+				current = count;
+			}
+			if(current > count) {
+				current = 0;
+			}
+			sync2.find(".owl-item").removeClass("current").eq(current).addClass("current");
+			if($(sync2).data("owlCarousel") !== undefined){
+                center(current);
+            }
+			var onscreen = sync2.find('.owl-item.active').length - 1;
+			var start = sync2.find('.owl-item.active').first().index();
+			var end = sync2.find('.owl-item.active').last().index();
+			if (current > end) {
+				sync2.data('owl.carousel').to(current, 100, true);
+			}
+			if (current < start) {
+				sync2.data('owl.carousel').to(current - onscreen, 100, true);
+			}
+		}
+		function syncPosition2(el) {
+			if(syncedSecondary) {
+				var number = el.item.index;
+				sync1.data('owl.carousel').to(number, 100, true);
+			}
+		}
+		sync2.on("click", ".owl-item", function(e){
+			e.preventDefault();
+			var number = $(this).index();
+			sync1.data('owl.carousel').to(number, 300, true);
+		});
+    },
+    th_gal: () => {
+        var block_id = block_id || 0;
+		var sync1 = $('.th_gal_owl .th_gal_top');
+		var sync2 = $('.th_gal_owl .th_gal_bot');
+		var slidesPerPage = 4;
+		var syncedSecondary = true;
+
+		sync1.owlCarousel({
+			items : 1,
+			slideSpeed : 2000,
+			nav: true,
+			autoplay: false,
+			dots: false,
+			loop: false,
+			responsiveRefreshRate : 200,
+			autoHeight: true
+		}).on('changed.owl.carousel', syncPosition);
+		sync2
+			.on('initialized.owl.carousel', function () {
+			sync2.find(".owl-item").eq(0).addClass("current");
+		}).owlCarousel({
+			items : slidesPerPage,
+			dots: false,
+			nav: false,
+			smartSpeed: 200,
+			slideSpeed : 500,
+			
+			responsiveRefreshRate : 100
+		}).on('changed.owl.carousel', syncPosition2);
+
+		function syncPosition(el) {
+			var count = el.item.count-1;
+			var current = Math.round(el.item.index - (el.item.count/2) - .5);
+			if(current < 0) {
+				current = count;
+			}
+			if(current > count) {
+				current = 0;
+			}
+			sync2.find(".owl-item").removeClass("current").eq(current).addClass("current");
+			if($(sync2).data("owlCarousel") !== undefined){
+                center(current);
+            }
+			var onscreen = sync2.find('.owl-item.active').length - 1;
+			var start = sync2.find('.owl-item.active').first().index();
+			var end = sync2.find('.owl-item.active').last().index();
+			if (current > end) {
+				sync2.data('owl.carousel').to(current, 100, true);
+			}
+			if (current < start) {
+				sync2.data('owl.carousel').to(current - onscreen, 100, true);
+			}
+		}
+		function syncPosition2(el) {
+			if(syncedSecondary) {
+				var number = el.item.index;
+				sync1.data('owl.carousel').to(number, 100, true);
+			}
+		}
+		sync2.on("click", ".owl-item", function(e){
+			e.preventDefault();
+			var number = $(this).index();
+			sync1.data('owl.carousel').to(number, 300, true);
+		});
+    },
 };
 
 
@@ -33,6 +163,9 @@ var app = {
             items: 4,
             loop: true
         });
+
+        reinit.th_layout_gal();
+        reinit.th_gal();
 
 
         reinit.fancy($('.fancybox'));
@@ -139,9 +272,9 @@ var app = {
         }
         var new_src = $('.th_gal .item[data-index="'+ new_index+'"] img')[0].src;
         $('.th_gal .preview').attr("data-current-index", new_index);
-        target[0].src = new_src;        
-        
-    }
+        target[0].src = new_src;
+    },
+
 };
 
 (function($){

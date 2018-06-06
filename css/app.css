@@ -96,7 +96,7 @@ section.video {background: #111;}
 #c_part3_t {transform: translate(-160px, 213px); transform: -webkit-translate(-160px, 213px); transform: -moz-translate(-160px, 213px); transform: -o-translate(-160px, 213px); transform: -ms-translate(-160px, 213px);}
 #c_part4_t {transform: translate(-116px, 313px); transform: -webkit-translate(-116px, 313px); transform: -moz-translate(-116px, 313px); transform: -o-translate(-116px, 313px); transform: -ms-translate(-116px, 313px);}
 #c_part5_t {transform: translate(-58px, 411px); transform: -webkit-translate(-58px, 411px); transform: -moz-translate(-58px, 411px); transform: -o-translate(-58px, 411px); transform: -ms-translate(-58px, 411px);}
-
+/* 
 .th_gal .preview {position: relative;}
 .th_gal .preview .title {padding: 20px; text-align: center; color: #fff; font: 26px 'RobotoB', Tahoma; background: #d51820;}
 .th_gal .preview img {width: 100%; height: auto;}
@@ -127,7 +127,7 @@ section.video {background: #111;}
 .th_gal .owl-item.active:first-child .item {padding-left: 0;}
 .th_gal .owl-item.active:last-child .item {padding-right: 0;}
 
-.th_gal {padding: 80px 0; margin-top: -10px;}
+.th_gal {padding: 80px 0; margin-top: -10px;} */
 
 a.fancybox:hover img {transition-duration: 0.3s;}
 a.fancybox:hover img {opacity: 0.9;}
@@ -210,3 +210,37 @@ a.fancybox:hover img {opacity: 0.9;}
 .rd_th_layouts .th_name {color: #fff; font: 30px 'RobotoB', Tahoma; margin-bottom: 10px;}
 .rd_th_layouts .description {color: #fff; font: 14px 'RobotoL', Tahoma;}
 
+.rd_th_layouts .top_owl {width: 100%; overflow: hidden; margin-bottom: 5px;}
+.rd_th_layouts .top_owl .item {padding-left: 5px; padding-right: 5px;}
+.rd_th_layouts .bot_owl {width: 100%; height: 50px;}
+.rd_th_layouts .top_owl img {max-width: 100%; max-height: 460px; height: auto; width: auto;}
+.rd_th_layouts .bot_owl img {max-width: 100%; max-height: 80px; height: auto; width: auto;}
+.rd_th_layouts .bot_owl .item {text-align: center; padding: 5px;} 
+
+.th_gal_owl {padding: 80px 0;}
+.th_gal_owl .th_gal_top {display: block; position: relative;  margin-bottom: 10px; padding-left: 10px; padding-right: 10px;}
+.th_gal_owl .th_gal_top .item {text-align: center; position: relative; padding-top: 0px;}
+.th_gal_owl .th_gal_top .item img {max-width: 100%; max-height: 630px; width: auto; height: auto;}
+
+.th_gal_owl .th_gal_top .item .title {position: absolute; left: 0; top: 0; width: 100%; background: #d51820; text-align: center; font: 26px 'RobotoB', Tahoma; color: #fff; padding: 20px;}
+
+.th_gal_owl .th_gal_bot .item {padding: 10px;}
+
+.th_gal_owl .th_gal_bot .owl-item  .item {border-bottom: 2px solid transparent;}
+/*.th_gal_owl .th_gal_bot .owl-item.current .item {border-bottom: 2px solid #d51820;} */
+.th_gal_owl .th_gal_bot .item {}
+.th_gal_owl .th_gal_bot .item img {max-width: 100%; max-height: 148px; height: auto; width: auto;}
+
+.th_gal_owl .th_gal_top .owl-nav {position: absolute; left: 0; bottom: 0; width: 100%; padding: 20px 0; min-height: 74px;;}
+.th_gal_owl .th_gal_top .owl-nav .owl-prev {padding: 20px 10px; background: rgba(0, 0, 0, 0.4); position: absolute; left: 0; bottom: 0; min-height: 74px;
+    cursor: pointer; width: 42%;}
+.th_gal_owl .th_gal_top .owl-nav .owl-next {padding: 20px 10px; background: rgba(0, 0, 0, 0.4); position: absolute; right: 0; bottom: 0; min-height: 74px;
+        cursor: pointer; width: 42%;}
+
+.th_gal_owl .th_gal_top .owl-nav .owl-prev::after {content: ""; position: absolute; width: 30%; height: 2px; left: 10%; top: 50%; margin-top: -1px; background: #fff; transition-duration: 0.4s;}
+.th_gal_owl .th_gal_top .owl-nav .owl-next::after {content: ""; position: absolute; width: 30%; height: 2px; right: 10%; top: 50%; margin-top: -1px; background: #fff; transition-duration: 0.4s;}
+
+.th_gal_owl .th_gal_top .owl-nav .owl-prev:hover::after, .th_gal_owl .th_gal_top .owl-nav .owl-next:hover::after {width: 80%;}
+.th_gal_owl .th_gal_top .owl-nav .owl-prev:hover, .th_gal_owl .th_gal_top .owl-nav .owl-next:hover { background: rgba(0, 0, 0, 0.7);}
+.th_gal_owl .th_gal_top .curr_image {width: 16%; position: absolute; left: 42%; bottom: 0; padding: 20px 10px; background: rgba(0, 0, 0, 0.4); min-height: 74px; padding-top: 25px;}
+.th_gal_owl .th_gal_top .curr_image span {color: #fff; font: 18px 'RobotoR', Tahoma; text-align: center;}
