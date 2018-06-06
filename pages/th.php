@@ -182,7 +182,7 @@
 <section class="th_info_block_1">
     <div class="row">
         <div class="container">
-            <div class="col col-lg-7 col-md-7 col-sm-7 col-xs-12 left_side">
+            <div class="col col-lg-8 col-md-8 col-sm-8 col-xs-12 left_side">
                 <div class="caption">Ваш <br>уютный <br>дом</div>
                 <div class="separator"></div>
                 <div class="content_target">
@@ -218,4 +218,88 @@
     <div class="clear"></div>
 </section>
 
-<section class="th_info_block_2"></section>
+<section class="th_info_block_2">
+    <div class="row">
+        <div class="container">
+
+            <div class="col col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <div class="outer_item">
+                    <div class="inner_item">
+                        <div class="caption">Все <br>подведено</div>
+                        <div class="separator"></div>
+                        
+                        <div class="icon_table_set">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="bg" style="background-image: url('<?= RS.'img/lamp.png'; ?>');"></div>
+                                            <div class="text">Свет</div>
+                                        </td>
+                                        <td>
+                                            <div class="bg" style="background-image: url('<?= RS.'img/oven.png'; ?>');"></div>
+                                            <div class="text">Газ</div>
+                                        </td>
+                                        <td>
+                                            <div class="bg" style="background-image: url('<?= RS.'img/pipe.png'; ?>');"></div>
+                                            <div class="text">Вода</div>
+                                        </td>
+                                        <td>
+                                            <div class="bg" style="background-image: url('<?= RS.'img/radiator.png'; ?>');"></div>
+                                            <div class="text">Отопление</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="additional">
+                            <p class="title">Дополнительно</p>
+                            <ul>
+                                <li><span>Система умный дом</span></li>
+                                <li><span>4 уровня - цоколь, мансарда, 2 жилых этажа</span></li>
+                                <li><span>Утепление минеральной ватой</span></li>
+                                <li><span>Автономное отопление</span></li>
+                                <li><span>Большие кухни гостинные</span></li>
+                                <li><span>Предусмотрено размещение камина</span></li>
+                                <li><span>Въезд по пропускам</span></li>
+                                <li><span>Места для досуга и отдыха</span></li>
+                                <li><span>Охрана и видеонаблюдение</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rd_th_layouts parallax-window" data-parallax="scroll" data-image-src="<?= RS.'img/th_section_bg.jpg'; ?>">
+    <div class="container">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 rd_th_layouts_holder">
+            <div class="top_owl"></div>
+            <div class="bot_owl"></div>
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 left_side">
+            
+            <div class="caption">Готовые <br>таунхаусы</div>
+            <div class="separator"></div>
+
+            <div class="layouts_switcher">
+                <p>Метраж м<sup>2</sup></p>
+                <ul>
+                    <li class="active"><a href="javascript:void(0);">111</a></li>
+                    <li><a href="javascript:void(0);">121</a></li>
+                    <li><a href="javascript:void(0);">73.8</a></li>
+                </ul>
+            </div>
+
+            <div class="th_name">Таунхаус "Амстердам"</div>
+            <div class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae fugiat quo necessitatibus mollitia sit in temporibus alias, repellendus corporis ut debitis, vero laudantium rerum nemo cum neque facere maiores consectetur.
+            </div>
+
+        </div>
+    </div>
+</section>

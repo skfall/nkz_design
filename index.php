@@ -1,6 +1,6 @@
 <?php 
 
-    define("RS", "/nkz_design/");
+    define("RS", "/playground/");
 
 ?>
 

@@ -56,7 +56,7 @@ header .address a:hover {text-decoration: underline;}
 .intro .right_side img {display: block; margin: 0 0 0 -50px;}
 .intro .caption {font: 50px 'BodoniB', Tahoma; color: #504f4b; text-transform: uppercase; margin-bottom: 20px;}
 .intro .separator {width: 100px; height: 3px; background: #e3cdb2; margin-left: -30px; margin-bottom: 25px;}
-.intro .left_side {padding: 80px; border-left: 15px solid #e3cdb2; border-bottom: 15px solid #e3cdb2; position: relative;}
+.intro .left_side {padding: 80px; border-left: 15px solid #e3cdb2; border-bottom: 15px solid #e3cdb2; position: relative; z-index: 33;}
 .intro .left_side::before {content: ""; position: absolute; left: 0; top: 0px; height: 15px; background: #e3cdb2; width: 25%;}
 .intro .left_side::after {content: ""; position: absolute; right: 0; bottom: 0px; width: 15px; background: #e3cdb2; height: 25%;}
 .intro .content_target div, .intro .content_target p, .intro .content_target li, .intro .content_target span {letter-spacing: 1px; line-height: 24px; font-size: 16px; color: #504f4b;}
@@ -160,7 +160,8 @@ a.fancybox:hover img {opacity: 0.9;}
 .th_lines .lines .item .th_layouts_btn {font: 14px 'RobotoR', Tahoma; color: #fff; text-align: center; padding: 12px 10px; border: 2px solid #e3cdb2; width: 80%; margin: 20px auto 10px; cursor: pointer; transition-duration: 0.3s;}
 .th_lines .lines .item .th_layouts_btn:hover {background: #e3cdb2; color: #000;}
 
-.th_info_block_1 {background: url('../img/section_bg.png') left bottom no-repeat; background-size: contain; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; -ms-background-size: contain; padding: 90px;}
+.th_info_block_1 {background: url('../img/section_bg.png') left bottom no-repeat; background-size: contain; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; -ms-background-size: contain;}
+.th_info_block_1 .row {padding: 90px; background: url('../img/smart_house.jpg') right center no-repeat; background-size: 44% 100%; -webkit-background-size: 44% 100%; -moz-background-size: 44% 100%; -o-background-size: 44% 100%; -ms-background-size: 44% 100%;}
 .th_info_block_1 .right_side img {display: block; margin: 0 0 0 -50px;}
 .th_info_block_1 .caption {font: 50px 'BodoniB', Tahoma; color: #504f4b; text-transform: uppercase; margin-bottom: 20px; line-height: 42px;}
 .th_info_block_1 .separator {width: 100px; height: 3px; background: #e3cdb2; margin-left: -30px; margin-bottom: 25px;}
@@ -172,3 +173,40 @@ a.fancybox:hover img {opacity: 0.9;}
 .th_info_block_1 .icons table td {position: relative; padding: 10px 0;}
 .th_info_block_1 .icons table td .text {font: 16px 'RobotoL', Tahoma; color: #504f4b; display: block; padding-left: 50px;}
 .th_info_block_1 .icons table td .bg {display: block; width: 32px; height: 32px; background-repeat: no-repeat; background-position: center top; float: left; margin-right: 15px;}
+
+.th_info_block_2 {background: #cdc6bd url('../img/communications.jpg') right center no-repeat; background-size: 44% 100%; -webkit-background-size: 44% 100%; -moz-background-size: 44% 100%; -o-background-size: 44% 100%; -ms-background-size: 44% 100%;}
+.th_info_block_2 .row {padding: 90px;}
+.th_info_block_2 .outer_item {background: rgba(0,0,0, 0.9); margin-left: -60px; padding: 50px;}
+.th_info_block_2 .inner_item {border: 15px solid #e3cdb2; padding: 80px; border-top: 0; border-right: 0; position: relative;}
+.th_info_block_2 .inner_item::before {content: ""; position: absolute; width: 50%; height: 15px; background: #e3cdb2; left: 0; top: 0;}
+.th_info_block_2 .inner_item::after {content: ""; position: absolute; width: 15px; height: 45%; background: #e3cdb2; right: 0; bottom: 0;}
+.th_info_block_2 .caption {font: 50px 'BodoniB', Tahoma; color: #fff; text-transform: uppercase; margin-bottom: 20px; line-height: 42px;}
+.th_info_block_2 .separator {width: 100px; height: 3px; background: #e3cdb2; margin-left: -30px; margin-bottom: 25px;}
+
+.th_info_block_2 .icon_table_set {padding: 20px 0 50px;}
+.th_info_block_2 .icon_table_set td {overflow: hidden; padding-right: 50px;}
+.th_info_block_2 .icon_table_set .bg {width: 60px; margin: 0 auto; background-repeat: no-repeat; background-position: center; background-size: contain; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; -ms-background-size: contain; height: 60px;}
+.th_info_block_2 .icon_table_set .text {font: 20px 'RobotoB', Tahoma; color: #fff; text-align: center; padding: 10px 0;}
+.th_info_block_2 .additional li {color: #a0927f; margin-bottom: 10px;}
+.th_info_block_2 .additional li span {color: #fff; font: 16px 'RobotoR', Tahoma; padding-left: 5px;}
+.th_info_block_2 .additional ul {list-style-type: square; margin-left: 40px;}
+.th_info_block_2 .additional .title {font: 18px 'RobotoB', Tahoma; color: #e3cdb2;}
+
+.rd_th_layouts {padding: 90px;}
+@media(min-width: 994px) {
+    .rd_th_layouts .rd_th_layouts_holder {float: right;}    
+}
+
+.rd_th_layouts .caption {font: 50px 'BodoniB', Tahoma; color: #fff; text-transform: uppercase; margin-bottom: 20px; line-height: 42px;}
+.rd_th_layouts .separator {width: 100px; height: 3px; background: #d51820; margin-left: -30px; margin-bottom: 25px;}
+.rd_th_layouts .layouts_switcher p {color: #fff; font: 16px 'RobotoL', Tahoma; margin-bottom: 20px; margin-bottom: 60px;}
+.rd_th_layouts .layouts_switcher {margin-bottom: 50px;}
+
+.rd_th_layouts .layouts_switcher li {display: inline-block; margin-right: 2px;}
+.rd_th_layouts .layouts_switcher li a {text-align: center; font: 24px 'RobotoL', Tahoma; color: #888888; padding: 10px 20px; transition-duration: 0.3s; border: 2px solid #888888; text-decoration: none;}
+.rd_th_layouts .layouts_switcher li.active a {color: #fff; background: #d51820; border-color: #d51820;}
+.rd_th_layouts .layouts_switcher li:hover:not(.active) a {color: #fff; background: transparent; color: #fff; border-color: #d51820;}
+
+.rd_th_layouts .th_name {color: #fff; font: 30px 'RobotoB', Tahoma; margin-bottom: 10px;}
+.rd_th_layouts .description {color: #fff; font: 14px 'RobotoL', Tahoma;}
+
