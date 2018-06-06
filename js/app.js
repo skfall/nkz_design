@@ -182,6 +182,24 @@ var app = {
             $('.circle_text').removeClass('hovered');
             $(".time_point").removeClass("hovered");            
         });
+
+        $('.th_svg_element').on('mousemove', (e) => {
+            var x = e.clientX;
+            var y = e.clientY;
+
+            var target = $('.floating');
+            target.css({
+                left: x,
+                top: y
+            });
+            console.log([x, y]);
+        });
+
+        $('.th_svg_element').hover((e) => {
+            $('.floating').show(0);
+        }, (e) => {
+            $('.floating').hide(0);         
+        });
         
     },
     video_jump: (self) => {

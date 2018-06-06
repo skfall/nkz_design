@@ -121,6 +121,13 @@
 ?>
 
 <section class="th_genplan">
+    <div class="floating">
+        <div class="item_type">отдельный дом</div>
+        <div class="item_name">Будапешт</div>
+        <div class="separator"></div>
+        <div class="area">площадь дома <span>140 <sup>м<sup>2</sup></sup></span></div>
+        <div class="add_area">+ цоколь <span>40 <sup>м<sup>2</sup></sup></span></div>
+    </div>
     <img src="<?= RS.'img/genplan_bg.jpg'; ?>" id="genplan_image" alt="Genplan" />
     <?php include("elements/genplan.php"); ?>
 </section>

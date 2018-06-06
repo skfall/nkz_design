@@ -244,3 +244,13 @@ a.fancybox:hover img {opacity: 0.9;}
 .th_gal_owl .th_gal_top .owl-nav .owl-prev:hover, .th_gal_owl .th_gal_top .owl-nav .owl-next:hover { background: rgba(0, 0, 0, 0.7);}
 .th_gal_owl .th_gal_top .curr_image {width: 16%; position: absolute; left: 42%; bottom: 0; padding: 20px 10px; background: rgba(0, 0, 0, 0.4); min-height: 74px; padding-top: 25px;}
 .th_gal_owl .th_gal_top .curr_image span {color: #fff; font: 18px 'RobotoR', Tahoma; text-align: center;}
+
+.th_genplan {position: relative;}
+.th_genplan .floating {background: rgba(0, 0, 0, 1); position: absolute; left: 0; top: 0; padding: 30px; color: #fff; display: none;}
+.th_genplan .floating .item_type {color: #fff; font: 14px 'RobotoR', Tahoma; margin-bottom: 7px;}
+.th_genplan .floating .item_name {color: #fff; font: 38px 'BodoniB', Tahoma; padding-left: 5px; margin-bottom: 10px;}
+.th_genplan .floating .separator {width: 40%; height: 3px; background: #d51820; margin-left: -10px; margin-bottom: 10px; }
+.th_genplan .floating .area {color: #fff; font: 14px "RobotoL", Tahoma;}
+.th_genplan .floating .area span {font-size: 24px; color: #fff; font-family: "RobotoB";}
+.th_genplan .floating .add_area {color: #fff; font: 14px "RobotoL", Tahoma;}
+.th_genplan .floating .add_area span {font-size: 24px; color: #fff; font-family: "RobotoB";}
