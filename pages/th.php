@@ -57,14 +57,14 @@
         <div class="th_gal_top owl-carousel">
             <div class="item">
                 <div class="title">Воплощаем европейские ценности</div>
-                <a href="<?= RS.'img/gallery_item.jpg'; ?>" class="fancybox">
+                <a href="<?= RS.'img/gallery_item.jpg'; ?>" class="fancybox" data-fancybox="th_page_gal">
                     <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Image" />
                 </a>
                 <div class="curr_image"><span>1 / 4</span></div>
             </div>
             <div class="item">
                 <div class="title">Воплощаем европейские ценности 2</div>
-                <a href="<?= RS.'img/home-slide.jpg'; ?>" class="fancybox">
+                <a href="<?= RS.'img/home-slide.jpg'; ?>" class="fancybox" data-fancybox="th_page_gal">
                     <img src="<?= RS.'img/home-slide.jpg'; ?>" alt="Image" />
                 </a>
                 <div class="curr_image"><span>2 / 4</span></div>
@@ -125,8 +125,8 @@
         <div class="item_type">отдельный дом</div>
         <div class="item_name">Будапешт</div>
         <div class="separator"></div>
-        <div class="area">площадь дома <span>140 <sup>м<sup>2</sup></sup></span></div>
-        <div class="add_area">+ цоколь <span>40 <sup>м<sup>2</sup></sup></span></div>
+        <div class="area">площадь дома <span><span class="val">140</span> <sup>м<sup>2</sup></sup></span></div>
+        <div class="add_area">+ цоколь <span><span class="val">40</span> <sup>м<sup>2</sup></sup></span></div>
     </div>
     <img src="<?= RS.'img/genplan_bg.jpg'; ?>" id="genplan_image" alt="Genplan" />
     <?php include("elements/genplan.php"); ?>
@@ -318,12 +318,12 @@
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 rd_th_layouts_holder">
             <div class="top_owl owl-carousel">
                 <div class="item">
-                    <a href="<?= RS.'img/layout.jpg'; ?>" class="fancybox">
+                    <a href="<?= RS.'img/layout.jpg'; ?>" class="fancybox" data-fancybox="th_layout_gal_">
                         <img src="<?= RS.'img/layout.jpg'; ?>" alt="Layout">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="<?= RS.'img/gallery_item.jpg'; ?>" class="fancybox">
+                    <a href="<?= RS.'img/gallery_item.jpg'; ?>" class="fancybox" data-fancybox="th_layout_gal_">
                         <img src="<?= RS.'img/gallery_item.jpg'; ?>" alt="Layout">
                     </a>
                 </div>

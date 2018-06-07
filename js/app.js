@@ -184,19 +184,43 @@ var app = {
         });
 
         $('.th_svg_element').on('mousemove', (e) => {
+            return;
             var x = e.clientX;
             var y = e.clientY;
 
             var target = $('.floating');
             target.css({
-                left: x,
+                left: x + 20,
                 top: y
             });
-            console.log([x, y]);
+            //console.log([x, y]);
         });
 
         $('.th_svg_element').hover((e) => {
-            $('.floating').show(0);
+            var el = e.currentTarget;
+            var target = $('.floating');
+            var margin = ~~(target.width() + 70);
+            var childPos = $(el).offset();
+            var parentPos = $('.th_genplan').offset();
+            var type = $(el).data("type");
+            var name = $(el).data("name");
+            var area = parseInt($(el).data("area"));
+            var sub_area = parseInt($(el).data("sub-area"));
+            var x = ~~$(el).offset().left;
+            var y = ~~(childPos.top - parentPos.top);
+
+            target.find(".item_type").text(type);
+            target.find(".item_name").text(name);
+            target.find(".area .val").text(area);
+            target.find(".add_area .val").text(sub_area);
+            
+            target.css({
+                left: x - margin,
+                top: y
+            });
+            
+            target.show(0);
+                
         }, (e) => {
             $('.floating').hide(0);         
         });

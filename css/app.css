@@ -246,7 +246,7 @@ a.fancybox:hover img {opacity: 0.9;}
 .th_gal_owl .th_gal_top .curr_image span {color: #fff; font: 18px 'RobotoR', Tahoma; text-align: center;}
 
 .th_genplan {position: relative;}
-.th_genplan .floating {background: rgba(0, 0, 0, 1); position: absolute; left: 0; top: 0; padding: 30px; color: #fff; display: none;}
+.th_genplan .floating {background: rgba(0, 0, 0, 0.8); position: absolute; left: 0; top: 0; padding: 30px; color: #fff; display: none; z-index: 50;}
 .th_genplan .floating .item_type {color: #fff; font: 14px 'RobotoR', Tahoma; margin-bottom: 7px;}
 .th_genplan .floating .item_name {color: #fff; font: 38px 'BodoniB', Tahoma; padding-left: 5px; margin-bottom: 10px;}
 .th_genplan .floating .separator {width: 40%; height: 3px; background: #d51820; margin-left: -10px; margin-bottom: 10px; }
