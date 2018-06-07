@@ -183,19 +183,6 @@ var app = {
             $(".time_point").removeClass("hovered");            
         });
 
-        $('.th_svg_element').on('mousemove', (e) => {
-            return;
-            var x = e.clientX;
-            var y = e.clientY;
-
-            var target = $('.floating');
-            target.css({
-                left: x + 20,
-                top: y
-            });
-            //console.log([x, y]);
-        });
-
         $('.th_svg_element').hover((e) => {
             var el = e.currentTarget;
             var target = $('.floating');

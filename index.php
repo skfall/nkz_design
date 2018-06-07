@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <?php include("elements/header.php"); ?>
+    <?php //include("elements/header.php"); ?>
     <div class="wrapper">
         <?php include("pages/th.php"); ?>
     </div>

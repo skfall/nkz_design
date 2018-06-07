@@ -49,7 +49,7 @@ header .address a:hover {text-decoration: underline;}
 .th_slider .sld_holder {display: block;}
 .th_slider .item {position: relative;}
 .th_slider .item img {width: 100%; height: auto;}
-.th_slider .slide_caption {position: absolute; bottom: 150px; font: 36px 'RobotoB', Tahoma; color: #fff; letter-spacing: 2px; left: 15%;}
+.th_slider .slide_caption {position: absolute; bottom: 150px; font: 36px 'RobotoB', Tahoma; color: #fff; letter-spacing: 2px; left: 15%; text-shadow: 0 0 3px #000;}
 
 
 .intro {background: url('../img/section_bg.png') left bottom no-repeat; background-size: contain; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; -ms-background-size: contain; padding: 90px;}
@@ -254,3 +254,78 @@ a.fancybox:hover img {opacity: 0.9;}
 .th_genplan .floating .area span {font-size: 24px; color: #fff; font-family: "RobotoB";}
 .th_genplan .floating .add_area {color: #fff; font: 14px "RobotoL", Tahoma;}
 .th_genplan .floating .add_area span {font-size: 24px; color: #fff; font-family: "RobotoB";}
+
+@media(max-width: 1400px){
+    .video .tracker {margin-right: 0;}
+    .video .sound_switcher {margin-left: 200px; margin-right: 226px;;}
+}
+
+@media(max-width: 1200px){
+    .th_slider .slide_caption {bottom: 80px; left: 10%;}
+    .intro {padding: 40px;}
+    .intro .left_side {padding: 50px;}
+    .intro .right_side img {width: 100%; margin: 0;}
+    .video .caption {font-size: 40px; line-height: 35px;}
+    .video {}
+
+
+    .th_lines .lines .item .desc {padding: 20px;}
+    .th_lines .lines .item .image img {height: 153px;}
+    .th_lines .name .line_name {font-size: 30px;}
+    .th_lines .lines .item::after {right: -15px; bottom: -15px; height: 80%;}
+    .th_lines .name .line {margin-bottom: 5px;}
+    .th_lines .lines .item ul li {margin-bottom: 5px;}
+    .th_lines .lines .item ul li span {margin-left: 5px; font-size: 22px;}
+
+    .th_info_block_1 .row {padding: 40px; background: none;}
+    .th_info_block_1 .left_side {padding: 50px 40px;}
+
+    .th_info_block_1 .icons table {width: 100%;}
+}
+
+@media(max-width: 993px){
+    .th_slider .slide_caption {font: 50px 'BodoniB', Tahoma; position: static; color: #504f4b; text-shadow: 0 0 0 #000; padding: 15px; text-align: center; width: 100%; letter-spacing: 0;}  
+    .intro .left_side {margin-bottom: 40px; padding-bottom: 20px;}  
+    .intro .caption {font-size: 35px;}
+    .intro {padding: 25px;}
+
+    .th_gal_owl {padding: 45px 0;}
+    .th_gal_owl .th_gal_top .item .title {font-size: 20px; padding: 10px;}
+    .th_gal_owl .th_gal_top .owl-nav .owl-prev, .th_gal_owl .th_gal_top .owl-nav .owl-next, .th_gal_owl .th_gal_top .owl-nav {min-height: 45px;}
+    .th_gal_owl .th_gal_top .curr_image {min-height: 45px; padding: 10px; padding-top: 11px;}
+    .th_gal_owl .th_gal_top {padding-left: 5px; padding-right: 5px; margin-bottom: 5px;}
+    .th_gal_owl .th_gal_bot .item {padding: 5px;}
+    .lines_outer_item {margin-bottom: 30px;}
+    
+    .th_lines {padding: 45px 0;}
+    .th_lines .caption {font-size: 45px; line-height: 38px; padding: 0 15px;}
+    .th_lines .lines {padding: 35px 0;}
+
+    .th_info_block_1 .caption {font-size: 45px;}
+
+    .icon_table_set table {display: none;} /* !!!!!!!!!!!!!!! */
+    
+    
+    
+}
+
+@media(max-width: 768px){
+    .th_lines .lines .item .image img {height: auto;}    
+    .th_slider .slide_caption {font-size: 40px;}   
+    .intro .left_side {padding-left: 20px; padding-right: 20px; border-width: 10px;} 
+    .intro .left_side::after {width: 10px;}
+    .intro .left_side::before {height: 10px;}
+    .th_gal_owl .th_gal_top .item .title {font-size: 16px; padding: 10px;}    
+
+    .th_lines .name .line {text-align: center;}
+    .th_lines .name .line_name {text-align: center; font-size: 45px;}
+    .th_lines .separator {margin-bottom: 20px;}
+    .th_info_block_1 .icons table td {padding: 5px;}
+    .th_info_block_1 .row {padding: 40px 15px;}
+    .th_info_block_1 .left_side {padding: 50px 15px; border-width: 10px;}
+    .th_info_block_1 .left_side::after {width: 10px;}
+    .th_info_block_1 .left_side::before {height: 10px;}
+    .th_info_block_1 .icons table td .bg {display: none;}
+    .th_info_block_1 .icons table td .text {padding-left: 0;}
+    .th_info_block_1 .separator {margin-left: 0;}
+}

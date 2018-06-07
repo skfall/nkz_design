@@ -13,7 +13,7 @@
 <section class="intro">
     <div class="row">
         <div class="container">
-            <div class="col col-lg-7 col-md-7 col-sm-7 col-xs-12 left_side">
+            <div class="col col-lg-7 col-md-6 col-sm-12 col-xs-12 left_side">
                 <div class="caption">Экохаусы</div>
                 <div class="separator"></div>
                 <div class="content_target">
@@ -21,7 +21,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptas reprehenderit, quas error fugit, officia facilis ex odit fugiat culpa quod, impedit dolorem consectetur tempora ipsa cum suscipit quibusdam at!</p>
                 </div>
             </div>
-            <div class="col col-lg-5 col-md-5 col-sm-5 col-xs-12 right_side">
+            <div class="col col-lg-5 col-md-6 hidden-sm hidden-xs right_side">
                 <img src="<?= RS."img/img_box1.jpg"; ?>" alt="Image" />
             </div>
         </div>
@@ -29,7 +29,7 @@
     <div class="clear"></div>
 </section>
 
-<section class="video">
+<section class="video hidden-sm hidden-xs">
     <div class="row">
         <div class="container">
             <div class="caption">Живи в стиле <br />Экохаус</div>
@@ -120,7 +120,7 @@
 */
 ?>
 
-<section class="th_genplan">
+<section class="th_genplan hidden-sm hidden-xs">
     <div class="floating">
         <div class="item_type">отдельный дом</div>
         <div class="item_name">Будапешт</div>
@@ -140,7 +140,7 @@
         <div class="lines">
 
             <!-- ITEM START -->
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 lines_outer_item">
                 <div class="item">
                     <div class="image">
                         <img src="<?= RS.'img/th_preview.jpg'; ?>" alt="Image" />
@@ -164,7 +164,7 @@
             <!-- ITEM END -->  
 
             <!-- ITEM START -->
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 lines_outer_item">
                 <div class="item">
                     <div class="image">
                         <img src="<?= RS.'img/th_preview.jpg'; ?>" alt="Image" />
@@ -188,7 +188,7 @@
             <!-- ITEM END -->  
 
             <!-- ITEM START -->
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 lines_outer_item">
                 <div class="item">
                     <div class="image">
                         <img src="<?= RS.'img/th_preview.jpg'; ?>" alt="Image" />
@@ -221,7 +221,7 @@
 <section class="th_info_block_1">
     <div class="row">
         <div class="container">
-            <div class="col col-lg-8 col-md-8 col-sm-8 col-xs-12 left_side">
+            <div class="col col-lg-8 col-md-12 col-sm-12 col-xs-12 left_side">
                 <div class="caption">Ваш <br>уютный <br>дом</div>
                 <div class="separator"></div>
                 <div class="content_target">
