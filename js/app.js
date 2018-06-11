@@ -1,4 +1,4 @@
-var reinit = {
+var reinit_th = {
     all: () => {
 
     },
@@ -154,21 +154,25 @@ var app = {
         $("#th_video").bind("timeupdate", app.video_update);
         $('.th_gal .preview .curr span').text("1 / " + $('.th_gal .queue .item').length);
 
-        reinit.owl($('.th_slider .sld_holder'), {
-            items: 1,
-            autoHeight: true
+        $('body').imagesLoaded( function() {
+            reinit_th.owl($('.th_slider .sld_holder'), {
+                items: 1,
+                autoHeight: true
+            });
+    
+            reinit_th.owl($('.th_gal .circus'), {
+                items: 4,
+                loop: true
+            });
+    
+            reinit_th.th_layout_gal();
+            reinit_th.th_gal();
         });
 
-        reinit.owl($('.th_gal .circus'), {
-            items: 4,
-            loop: true
-        });
-
-        reinit.th_layout_gal();
-        reinit.th_gal();
+        
 
 
-        reinit.fancy($('.fancybox'));
+        reinit_th.fancy($('.fancybox'));
 
         $('.circle_text').hover((e) => {
             var el = e.currentTarget;
@@ -211,6 +215,10 @@ var app = {
         }, (e) => {
             $('.floating').hide(0);         
         });
+
+        setTimeout(function(){
+            $(window).trigger('resize').trigger('scroll');  
+        }, 100);
         
     },
     video_jump: (self) => {
