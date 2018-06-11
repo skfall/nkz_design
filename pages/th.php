@@ -315,7 +315,7 @@
 
 <section class="rd_th_layouts parallax-window" data-parallax="scroll" data-image-src="<?= RS.'img/th_section_bg.jpg'; ?>">
     <div class="container">
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 rd_th_layouts_holder">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 rd_th_layouts_holder">
             <div class="top_owl owl-carousel">
                 <div class="item">
                     <a href="<?= RS.'img/layout.jpg'; ?>" class="fancybox" data-fancybox="th_layout_gal_">
@@ -338,7 +338,7 @@
             </div>
         </div>
 
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 left_side">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 left_side">
             
             <div class="caption">Готовые <br>таунхаусы</div>
             <div class="separator"></div>
@@ -348,6 +348,10 @@
                 <ul>
                     <li class="active"><a href="javascript:void(0);">111</a></li>
                     <li><a href="javascript:void(0);">121</a></li>
+                    <li><a href="javascript:void(0);">73.8</a></li>
+                    <li><a href="javascript:void(0);">73.8</a></li>
+                    <li><a href="javascript:void(0);">73.8</a></li>
+                    <li><a href="javascript:void(0);">73.8</a></li>
                     <li><a href="javascript:void(0);">73.8</a></li>
                 </ul>
             </div>
