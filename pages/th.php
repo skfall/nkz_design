@@ -338,7 +338,7 @@
             </div>
         </div>
 
-        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 left_side">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 left_side">
             
             <div class="caption">Готовые <br>таунхаусы</div>
             <div class="separator"></div>
